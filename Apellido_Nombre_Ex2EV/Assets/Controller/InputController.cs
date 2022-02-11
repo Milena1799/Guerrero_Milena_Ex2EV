@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/PorDefecto/InputController.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Controller/InputController.inputactions'
 
 using System;
 using System.Collections;
@@ -19,7 +19,7 @@ public class @InputController : IInputActionCollection, IDisposable
             ""id"": ""588e2273-af43-4289-aaac-0992a6ec5426"",
             ""actions"": [
                 {
-                    ""name"": ""Camiar"",
+                    ""name"": ""Caminar"",
                     ""type"": ""Value"",
                     ""id"": ""f1862489-332c-4914-9d8d-cdf90604efcb"",
                     ""expectedControlType"": ""Vector2"",
@@ -67,7 +67,7 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Camiar"",
+                    ""action"": ""Caminar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -149,7 +149,7 @@ public class @InputController : IInputActionCollection, IDisposable
 }");
         // Moverse
         m_Moverse = asset.FindActionMap("Moverse", throwIfNotFound: true);
-        m_Moverse_Camiar = m_Moverse.FindAction("Camiar", throwIfNotFound: true);
+        m_Moverse_Caminar = m_Moverse.FindAction("Caminar", throwIfNotFound: true);
         m_Moverse_GiroIzq = m_Moverse.FindAction("GiroIzq", throwIfNotFound: true);
         m_Moverse_GiroDer = m_Moverse.FindAction("GiroDer", throwIfNotFound: true);
         m_Moverse_Correr = m_Moverse.FindAction("Correr", throwIfNotFound: true);
@@ -206,7 +206,7 @@ public class @InputController : IInputActionCollection, IDisposable
     // Moverse
     private readonly InputActionMap m_Moverse;
     private IMoverseActions m_MoverseActionsCallbackInterface;
-    private readonly InputAction m_Moverse_Camiar;
+    private readonly InputAction m_Moverse_Caminar;
     private readonly InputAction m_Moverse_GiroIzq;
     private readonly InputAction m_Moverse_GiroDer;
     private readonly InputAction m_Moverse_Correr;
@@ -215,7 +215,7 @@ public class @InputController : IInputActionCollection, IDisposable
     {
         private @InputController m_Wrapper;
         public MoverseActions(@InputController wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Camiar => m_Wrapper.m_Moverse_Camiar;
+        public InputAction @Caminar => m_Wrapper.m_Moverse_Caminar;
         public InputAction @GiroIzq => m_Wrapper.m_Moverse_GiroIzq;
         public InputAction @GiroDer => m_Wrapper.m_Moverse_GiroDer;
         public InputAction @Correr => m_Wrapper.m_Moverse_Correr;
@@ -229,9 +229,9 @@ public class @InputController : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_MoverseActionsCallbackInterface != null)
             {
-                @Camiar.started -= m_Wrapper.m_MoverseActionsCallbackInterface.OnCamiar;
-                @Camiar.performed -= m_Wrapper.m_MoverseActionsCallbackInterface.OnCamiar;
-                @Camiar.canceled -= m_Wrapper.m_MoverseActionsCallbackInterface.OnCamiar;
+                @Caminar.started -= m_Wrapper.m_MoverseActionsCallbackInterface.OnCaminar;
+                @Caminar.performed -= m_Wrapper.m_MoverseActionsCallbackInterface.OnCaminar;
+                @Caminar.canceled -= m_Wrapper.m_MoverseActionsCallbackInterface.OnCaminar;
                 @GiroIzq.started -= m_Wrapper.m_MoverseActionsCallbackInterface.OnGiroIzq;
                 @GiroIzq.performed -= m_Wrapper.m_MoverseActionsCallbackInterface.OnGiroIzq;
                 @GiroIzq.canceled -= m_Wrapper.m_MoverseActionsCallbackInterface.OnGiroIzq;
@@ -248,9 +248,9 @@ public class @InputController : IInputActionCollection, IDisposable
             m_Wrapper.m_MoverseActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Camiar.started += instance.OnCamiar;
-                @Camiar.performed += instance.OnCamiar;
-                @Camiar.canceled += instance.OnCamiar;
+                @Caminar.started += instance.OnCaminar;
+                @Caminar.performed += instance.OnCaminar;
+                @Caminar.canceled += instance.OnCaminar;
                 @GiroIzq.started += instance.OnGiroIzq;
                 @GiroIzq.performed += instance.OnGiroIzq;
                 @GiroIzq.canceled += instance.OnGiroIzq;
@@ -302,7 +302,7 @@ public class @InputController : IInputActionCollection, IDisposable
     public CamaraActions @Camara => new CamaraActions(this);
     public interface IMoverseActions
     {
-        void OnCamiar(InputAction.CallbackContext context);
+        void OnCaminar(InputAction.CallbackContext context);
         void OnGiroIzq(InputAction.CallbackContext context);
         void OnGiroDer(InputAction.CallbackContext context);
         void OnCorrer(InputAction.CallbackContext context);

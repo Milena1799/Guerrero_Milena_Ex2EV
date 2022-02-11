@@ -6,7 +6,7 @@
             "id": "588e2273-af43-4289-aaac-0992a6ec5426",
             "actions": [
                 {
-                    "name": "Camiar",
+                    "name": "Caminar",
                     "type": "Value",
                     "id": "f1862489-332c-4914-9d8d-cdf90604efcb",
                     "expectedControlType": "Vector2",
@@ -54,7 +54,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Camiar",
+                    "action": "Caminar",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
