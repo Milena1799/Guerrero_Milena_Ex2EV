@@ -32,8 +32,8 @@ public class PersonajeMove : MonoBehaviour
     bool corriendo = false;
     bool strafing = false;
 
-    //Cámaras
-    [SerializeField] GameObject VCam;
+    //Cámara
+    
     [SerializeField] GameObject FreeLook;
 
 
@@ -71,8 +71,8 @@ public class PersonajeMove : MonoBehaviour
 
         cc = GetComponent<CharacterController>();
 
-        //Activo las cámaras
-        VCam.SetActive(false);
+        //Activo la cámara
+       
         FreeLook.SetActive(true);
     }
 
