@@ -1,0 +1,136 @@
+{
+    "name": "InputController",
+    "maps": [
+        {
+            "name": "Moverse",
+            "id": "588e2273-af43-4289-aaac-0992a6ec5426",
+            "actions": [
+                {
+                    "name": "Camiar",
+                    "type": "Value",
+                    "id": "f1862489-332c-4914-9d8d-cdf90604efcb",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "GiroIzq",
+                    "type": "Button",
+                    "id": "c2749b43-0891-4080-a48b-db3cd3c6effe",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "GiroDer",
+                    "type": "Button",
+                    "id": "ac6a0e0c-5a27-4152-bd94-674087a6efb8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Correr",
+                    "type": "Button",
+                    "id": "d96194e4-f411-420d-9123-eb915040d3ce",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Roll",
+                    "type": "Button",
+                    "id": "853cb03c-e280-4b65-94c4-d2f6975c1eb2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "019cb10a-bbf9-4179-b46c-d48c0047998f",
+                    "path": "<XInputController>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Camiar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "039b32e1-ca95-4be9-825c-de221aff6786",
+                    "path": "<XInputController>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GiroIzq",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a29072af-c619-4967-b172-d69c4d4abbaa",
+                    "path": "<XInputController>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GiroDer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "10b5d703-85b6-4d41-9a21-3d3c115e353e",
+                    "path": "<XInputController>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Correr",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dc2c4690-7b9d-49d1-b8c9-612df0503e51",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Camara",
+            "id": "508fa3f4-e8af-43ff-9f14-5b6f1739612e",
+            "actions": [
+                {
+                    "name": "camara",
+                    "type": "Value",
+                    "id": "9b40d644-bf22-4bea-8b71-9a196e95aed1",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1ab8f192-53d6-4134-8e9f-6bb84123e5a2",
+                    "path": "<XInputController>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "camara",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
