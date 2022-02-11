@@ -32,9 +32,9 @@ public class PersonajeMove : MonoBehaviour
     bool corriendo = false;
     bool strafing = false;
 
-    //Cámara
-    
-    [SerializeField] GameObject FreeLook;
+    //Cámaras
+    [SerializeField] GameObject VCam1;
+    [SerializeField] GameObject FreeLook1;
 
 
 
@@ -71,9 +71,10 @@ public class PersonajeMove : MonoBehaviour
 
         cc = GetComponent<CharacterController>();
 
-        //Activo la cámara
-       
-        FreeLook.SetActive(true);
+        //Activo las cámaras
+        VCam1.SetActive(false);
+        FreeLook1.SetActive(true);
+        
     }
 
     // Update is called once per frame
@@ -99,6 +100,7 @@ public class PersonajeMove : MonoBehaviour
 
         //Giro
         transform.Rotate(new Vector3(0f, stickL.x * 0.8f, 0f));
+        
 
     }
 
